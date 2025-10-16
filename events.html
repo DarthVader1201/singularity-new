@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Singularity</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="events.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <!-- Kept plain as requested in previous step -->
+            </div>
+            <input type="checkbox" id="sidebar-toggle">
+            <label for="sidebar-toggle" class="open-sidebar-button">
+                <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="30" viewBox="0 0 24 24"><path d="M5,7h2h12c1.1,0,2-0.9,2-2s-0.9-2-2-2H7H5C3.9,3,3,3.9,3,5S3.9,7,5,7z"></path><path d="M19,10h-3H5c-1.1,0-2,0.9-2,2s0.9,2,2,2h11h3c1.1,0,2-0.9,2-2S20.1,10,19,10z"></path><path d="M19,17h-6H5c-1.1,0-2,0.9-2,2s0.9,2,2,2h8h6c1.1,0,2-0.9,2-2S20.1,17,19,17z"></path></svg>
+            </label>
+            <div class="sidebar">
+                <div>
+                    <label for="sidebar-toggle" class="close-sidebar-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35" viewBox="0 0 72 72"><path d="M 19 15 C 17.977 15 16.951875 15.390875 16.171875 16.171875 C 14.609875 17.733875 14.609875 20.266125 16.171875 21.828125 L 30.34375 36 L 16.171875 50.171875 C 14.609875 51.733875 14.609875 54.266125 16.171875 55.828125 C 16.951875 56.608125 17.977 57 19 57 C 20.023 57 21.048125 56.609125 21.828125 55.828125 L 36 41.65625 L 50.171875 55.828125 C 51.731875 57.390125 54.267125 57.390125 55.828125 55.828125 C 57.391125 54.265125 57.391125 51.734875 55.828125 50.171875 L 41.65625 36 L 55.828125 21.828125 C 57.390125 20.266125 57.390125 17.733875 55.828125 16.171875 C 54.268125 14.610875 51.731875 14.609875 50.171875 16.171875 L 36 30.34375 L 21.828125 16.171875 C 21.048125 15.391875 20.023 15 19 15 z"></path></svg>
+                    </label>
+                    <a href="team.html">Team</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="events.html">Events</a>
+                    <a href="#contact">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Upcoming Events Section with Horizontal Scroll -->
+        <section class="events-section upcoming-section">
+            <h1>Upcoming Events</h1>
+            <div class="scroller-wrapper">
+                 <button class="scroll-btn prev-btn">&lt;</button>
+                <div class="upcoming-events-scroller">
+                    <div class="event-card">
+                        <img src="https://placehold.co/600x400/1a1a2e/e0e0e0?text=Meteor+Shower+Watch" alt="Meteor Shower">
+                        <div class="event-details">
+                            <h3>Perseid Meteor Shower Watch</h3>
+                            <p class="event-date">August 12, 2026</p>
+                            <p>Join us for the annual Perseid meteor shower. We'll have telescopes set up and experts on hand to answer questions.</p>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <img src="https://placehold.co/600x400/3b4e6c/f0f0f0?text=Telescope+Workshop" alt="Telescope Workshop">
+                        <div class="event-details">
+                            <h3>Telescope Building Workshop</h3>
+                            <p class="event-date">September 5, 2026</p>
+                            <p>Learn the basics of optics and build your own small telescope to take home. All materials provided.</p>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <img src="https://placehold.co/600x400/0c0a1a/e5e5e5?text=Guest+Lecture" alt="Guest Lecture">
+                        <div class="event-details">
+                            <h3>Guest Lecture: Black Holes</h3>
+                            <p class="event-date">October 22, 2026</p>
+                            <p>A special lecture from a renowned astrophysicist on the mysteries of black holes and gravitational waves.</p>
+                        </div>
+                    </div>
+                     <div class="event-card">
+                        <img src="https://placehold.co/600x400/1a1a2e/e0e0e0?text=Saturn+Viewing" alt="Saturn Viewing">
+                        <div class="event-details">
+                            <h3>Saturn at Opposition</h3>
+                            <p class="event-date">November 15, 2026</p>
+                            <p>View Saturn at its biggest and brightest for the year. A perfect night to see the rings!</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="scroll-btn next-btn">&gt;</button>
+            </div>
+        </section>
+
+        <!-- Past Events Section with a Grid Layout -->
+        <section class="events-section past-section">
+            <h1>Past Events</h1>
+            <div class="past-events-grid">
+                <div class="event-card">
+                    <img src="https://placehold.co/600x400/1a1a2e/e0e0e0?text=Lunar+Eclipse" alt="Lunar Eclipse">
+                    <div class="event-details">
+                        <h3>Total Lunar Eclipse Viewing</h3>
+                        <p class="event-date">May 26, 2025</p>
+                        <p>A fantastic turnout for the total lunar eclipse. The weather was clear and the views were spectacular.</p>
+                    </div>
+                </div>
+                 <div class="event-card">
+                    <img src="https://placehold.co/600x400/0c0a1a/e5e5e5?text=Inquivesta+Stall" alt="Inquivesta Stall">
+                    <div class="event-details">
+                        <h3>Inquivesta 2025 Stall</h3>
+                        <p class="event-date">March 15, 2025</p>
+                        <p>We showcased our best astrophotography and demonstrated our equipment at the annual college fest.</p>
+                    </div>
+                </div>
+                 <div class="event-card">
+                    <img src="https://placehold.co/600x400/3b4e6c/f0f0f0?text=Intro+Session" alt="Intro Session">
+                    <div class="event-details">
+                        <h3>Introductory Session 2024</h3>
+                        <p class="event-date">October 1, 2024</p>
+                        <p>Welcomed the new batch of students with an introduction to our club's activities and goals.</p>
+                    </div>
+                </div>
+                 <div class="event-card">
+                    <img src="https://placehold.co/600x400/1a1a2e/e0e0e0?text=Solar+Viewing" alt="Solar Viewing">
+                    <div class="event-details">
+                        <h3>Safe Solar Viewing</h3>
+                        <p class="event-date">July 20, 2024</p>
+                        <p>Demonstrated safe solar viewing techniques using specialized filters and solar telescopes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+       <!-- This footer is identical to the one on the home page for consistency -->
+        <div>
+            <div>
+                <div>SINGULARITY</div>
+                <div>Follow us on</div>
+                <div class="social-media-handles">
+                    <a href="https://www.instagram.com/singularity_iiserk" target="_blank"><i><img src="https://www.svgrepo.com/show/349410/instagram.svg"></i><span>Instagram</span></a>
+                    <a href="#" target="_blank"><i><img style="filter: invert(100%)" src="https://abs.twimg.com/responsive-web/client-web/icon-ios.77d25eba.png"></i><span>X</span></a>
+                    <a href="https://www.linkedin.com/company/singularity-iiserk/" target="_blank"><i><img src="https://www.svgrepo.com/show/349436/linkedin.svg"></i><span>LinkedIn</span></a>
+                    <a href="https://www.youtube.com/@SingularityIISERK" target="_blank"><i><img src="https://www.svgrepo.com/show/349577/youtube.svg"></i><span>You Tube</span></a>
+                </div>
+            </div>
+            <div class="quick-links">
+                <p>Quick Links</p>
+                <a href="index.html">Home</a>
+                <a href="#">Programs</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Blog</a>
+                <a href="#">Newsletter</a>
+            </div>
+        </div>
+        <div>
+            <div class="contact-us">
+                <p class="address">IISER Kolkata, Haringhata Farm, Nadia, West Bengal, India - 741 246</p>
+                <p class="email">singularity@iiserkol.ac.in</p>
+            </div>
+            <div class="footer-img">
+                <img src="telescope.png" alt="someimage">
+            </div>
+        </div>
+        <div class="copyrights">
+            copyrights reserved
+        </div>
+    </footer>
+    <script src="events.js"></script>
+</body>
+</html>

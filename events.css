@@ -1,0 +1,122 @@
+/* General styling for both event sections */
+.events-section {
+    padding: var(--section-padding);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.events-section h1 {
+    font-size: var(--font-size-3);
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+}
+
+.upcoming-section {
+    background-color: var(--section-odd-background-color);
+}
+
+.past-section {
+     background-color: var(--section-even-background-color);
+     border-top: 1px solid var(--primary-color-1);
+}
+
+
+/* Upcoming Events - Scroller */
+.scroller-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.upcoming-events-scroller {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+    /* Smooth scrolling on touch devices */
+    scroll-snap-type: x mandatory;
+    padding-bottom: 1rem; /* Space for scrollbar if it appears */
+
+    /* Hide scrollbar for a cleaner look */
+    scrollbar-width: none; /* Firefox */
+}
+
+.upcoming-events-scroller::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+}
+
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(60, 78, 108, 0.7);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 10;
+    display: none; /* Hidden by default, shown on larger screens */
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+/* Show buttons on non-touch screens */
+@media (hover: hover) and (pointer: fine) {
+    .scroll-btn {
+        display: block;
+    }
+}
+
+
+/* Styling for all event cards */
+.event-card {
+    background-color: #1e293b; /* A dark blue-gray */
+    border-radius: var(--card-border-radius);
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    color: var(--text-color);
+    
+    /* For the scroller */
+    flex: 0 0 320px; /* Each card has a fixed width */
+    scroll-snap-align: start;
+}
+
+.event-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.event-details {
+    padding: 1rem;
+}
+
+.event-details h3 {
+    font-size: 1.25rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.event-date {
+    font-style: italic;
+    color: var(--accent-color-1);
+    margin-bottom: 0.75rem;
+}
+
+/* Past Events - Grid */
+.past-events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+}
