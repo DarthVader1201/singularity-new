@@ -12,8 +12,13 @@
     <link rel="stylesheet" href="navbar.css">
     <!--<link rel="stylesheet" href="style.css">-->
     <style>
-        /* Fix for logo size after being wrapped in a link */
-        nav > div a .logo {
+        /* Correct Fix for Logo Size:
+          The original CSS ('navbar.css') targeted an image that was a direct child of a div.
+          When we wrapped the logo image in an <a> tag for linking, that structure changed.
+          This new, more specific rule targets the logo inside the link and sets its height
+          correctly, ensuring it matches the original design.
+        */
+        nav > div:first-child > a > .logo {
             height: 130%;
         }
     </style>
