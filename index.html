@@ -11,26 +11,13 @@
     <link rel="stylesheet" href="global.css">
     <link rel="stylesheet" href="navbar.css">
     <!--<link rel="stylesheet" href="style.css">-->
-    <style>
-        /* Correct Fix for Logo Size:
-          The original CSS ('navbar.css') targeted an image that was a direct child of a div.
-          When we wrapped the logo image in an <a> tag for linking, that structure changed.
-          This new, more specific rule targets the logo inside the link and sets its height
-          correctly, ensuring it matches the original design.
-        */
-        nav > div:first-child > a > .logo {
-            height: 130%;
-        }
-    </style>
     <script src="script.js"></script>
 </head>
 <body>
     <header>
         <nav>
             <div>
-                <a href="index.html">
-                    <img src="assets/#Logo.png" alt="Logo" class="logo">
-                </a>
+                <!-- Logo removed as requested to keep it plain -->
             </div>
             <input type="checkbox" id="sidebar-toggle">
             <label for="sidebar-toggle" class="open-sidebar-button">
